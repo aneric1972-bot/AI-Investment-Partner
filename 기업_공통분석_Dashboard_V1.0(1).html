@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>기업 공통분석 Dashboard V1.0</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body{background:#f4f6f9;}
+.header{background:#123a63;color:#fff;padding:24px;border-radius:12px;}
+.card{border:none;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08);}
+.section-title{font-weight:700;color:#123a63;}
+.badge-go{background:#198754}
+.badge-watch{background:#ffc107;color:#222}
+.badge-no{background:#dc3545}
+.note{background:#eef6ff;border-left:5px solid #0d6efd;padding:12px;border-radius:6px}
+.footer{font-size:.9rem;color:#666}
+</style>
+</head>
+<body>
+<div class="container my-4">
+
+<div class="header mb-4">
+<h1>기업 공통분석 Dashboard V1.0</h1>
+<p class="mb-0">목적 : 기업을 심층 분석할 가치가 있는지 1차적으로 판단(GO / WATCH / NO GO)하기 위한 공통분석 템플릿</p>
+</div>
+
+<div class="card mb-4">
+<div class="card-body">
+<h4 class="section-title">0. 분석 표준 (Analysis Standard)</h4>
+<div class="row">
+<div class="col-md-6">
+<h6>분석 기준</h6>
+<ul>
+<li>분석 기준일</li>
+<li>데이터 기준일</li>
+<li>모든 수치는 기준 시점 명시</li>
+</ul>
+</div>
+<div class="col-md-6">
+<h6>데이터 출처 우선순위</h6>
+<ul>
+<li>기업 : 공시 → 사업보고서 → 분기보고서 → IR → 컨퍼런스콜</li>
+<li>산업 : 정부기관 → 산업협회 → 기업 공식자료 → 시장조사기관</li>
+<li>거시 : 중앙은행 → 정부기관 → IMF → OECD</li>
+<li>뉴스 : 기업공식 → 공시 → 정부 → 신뢰도 높은 언론</li>
+</ul>
+</div>
+</div>
+
+<table class="table table-bordered">
+<thead class="table-light">
+<tr><th>항목</th><th>기본 분석기간</th></tr>
+</thead>
+<tbody>
+<tr><td>기업 개요 / 사업</td><td>현재 기준</td></tr>
+<tr><td>산업 분석</td><td>최근 5년 + 향후 3~5년</td></tr>
+<tr><td>성장성</td><td>최근 5년 + 향후 3~5년</td></tr>
+<tr><td>재무</td><td>최근 5개년 + 최근 4개 분기</td></tr>
+<tr><td>리스크 / 투자 Thesis</td><td>현재 기준</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="row g-3">
+
+<div class="col-lg-6">
+<div class="card h-100"><div class="card-body">
+<h5 class="section-title">1. Executive Summary</h5>
+<ul>
+<li>기업 한 줄 소개</li>
+<li>핵심 투자포인트 3가지</li>
+<li>핵심 리스크 3가지</li>
+</ul>
+</div></div>
+</div>
+
+<div class="col-lg-6">
+<div class="card h-100"><div class="card-body">
+<h5 class="section-title">2. 한 줄 결론</h5>
+<p>현재 투자 매력도를 한 문장으로 요약</p>
+<span class="badge badge-go">GO</span>
+<span class="badge badge-watch">WATCH</span>
+<span class="badge badge-no">NO GO</span>
+</div></div>
+</div>
+
+<div class="col-md-6"><div class="card"><div class="card-body">
+<h5 class="section-title">3. 기업 개요</h5>
+<ul><li>사업 내용</li><li>주요 제품 및 서비스</li><li>매출 구성</li><li>주요 고객</li><li>사업 구조</li></ul>
+</div></div></div>
+
+<div class="col-md-6"><div class="card"><div class="card-body">
+<h5 class="section-title">4. 비즈니스 모델</h5>
+<ul><li>수익 구조</li><li>주요 수익원</li><li>수익성</li><li>사업 지속 가능성</li></ul>
+</div></div></div>
+
+<div class="col-md-6"><div class="card"><div class="card-body">
+<h5 class="section-title">5. 산업 분석</h5>
+<ul>
+<li>국내 산업 현황</li>
+<li>글로벌 산업 현황(미국 포함)</li>
+<li>산업 규모 및 성장성</li>
+<li>경쟁 환경</li>
+<li>주요 국가별 동향</li>
+</ul>
+</div></div></div>
+
+<div class="col-md-6"><div class="card"><div class="card-body">
+<h5 class="section-title">6. 경쟁력 분석</h5>
+<ul><li>시장점유율</li><li>경쟁사</li><li>경쟁우위</li><li>진입장벽</li><li>경제적 해자</li></ul>
+</div></div></div>
+
+<div class="col-md-6"><div class="card"><div class="card-body">
+<h5 class="section-title">7. 성장성 분석</h5>
+<ul><li>최근 5년 성장 추세</li><li>향후 3~5년 성장동력</li><li>성장 한계</li><li>신제품/신시장</li></ul>
+</div></div></div>
+
+<div class="col-md-6"><div class="card"><div class="card-body">
+<h5 class="section-title">8. 경영진 및 자본배분</h5>
+<ul><li>CEO</li><li>자본배분</li><li>배당</li><li>자사주</li><li>CAPEX</li><li>M&A</li></ul>
+</div></div></div>
+
+<div class="col-12"><div class="card"><div class="card-body">
+<h5 class="section-title">9. 재무 분석</h5>
+<div class="row">
+<div class="col-md-6">
+<b>최근 5개년</b>
+<ul><li>매출</li><li>영업이익</li><li>순이익</li><li>EPS</li><li>ROE</li><li>ROIC</li><li>FCF</li></ul>
+</div>
+<div class="col-md-6">
+<b>최근 4개 분기</b>
+<ul><li>매출</li><li>영업이익</li><li>순이익</li><li>영업이익률</li></ul>
+</div>
+</div>
+</div></div></div>
+
+<div class="col-md-6"><div class="card"><div class="card-body">
+<h5 class="section-title">10. 리스크 분석</h5>
+<ul>
+<li>기업 내부</li><li>산업</li><li>국내 거시경제</li><li>글로벌 거시경제</li>
+<li>미국 정책·금리</li><li>환율·원자재</li><li>공급망</li><li>지정학</li><li>규제</li>
+</ul>
+</div></div></div>
+
+<div class="col-md-6"><div class="card"><div class="card-body">
+<h5 class="section-title">11. 투자 Thesis</h5>
+<ul><li>투자 이유</li><li>핵심 투자 포인트</li><li>핵심 가정</li><li>확인해야 할 변수</li></ul>
+</div></div></div>
+
+<div class="col-md-6"><div class="card"><div class="card-body">
+<h5 class="section-title">12. Change Analysis</h5>
+<ul><li>좋아진 점</li><li>나빠진 점</li><li>새로운 변화</li><li>Thesis 변화</li></ul>
+</div></div></div>
+
+<div class="col-md-6"><div class="card"><div class="card-body">
+<h5 class="section-title">13. Action Items</h5>
+<ul>
+<li>최근 공시</li><li>최근 실적발표</li><li>최근 컨퍼런스콜</li>
+<li>최근 경쟁사 동향</li><li>가치평가 실시</li><li>업종별 Template 적용</li>
+</ul>
+</div></div></div>
+
+</div>
+
+<div class="note mt-4">
+<strong>사용 원칙</strong>
+<ul>
+<li>본 템플릿은 기업의 1차 공통분석을 위한 것이다.</li>
+<li>GO 판정 시 업종별 Template, 기업 생애주기 Template, 가치평가 Template 등 심층분석을 진행한다.</li>
+<li>최종 투자판단은 심층분석 이후 내린다.</li>
+</ul>
+</div>
+
+<p class="footer mt-4 text-center">기업 공통분석 Dashboard V1.0</p>
+
+</div>
+</body>
+</html>
